@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Portfolio</title>
+
+	<meta name="description" content="Portfolio">
+	<meta name="author" content="Piotr Niewiadomski">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<h1>Portfolio</h1>
+		</div>
+	</header>
+
+	<form class="container">
+		<nav>
+			<ul class="navbar">
+				<li>
+					<input class="category-toggler" data-target="all" id="all" type="radio" name="filter" checked="checked">
+					<label for="all">Wszystkie</label>
+				</li>
+				<li>
+					<input class="category-toggler" data-target="illustrations" id="illustrations" type="radio" name="filter">
+					<label for="illustrations">Ilustracje</label>
+				</li>
+				<li>
+					<input class="category-toggler" data-target="posters" id="posters" type="radio" name="filter">
+					<label for="posters">Plakaty</label>
+				</li>
+				<li>
+					<input class="category-toggler" data-target="typography" id="typography" type="radio" name="filter">
+					<label for="typography">Typografia</label>
+				</li>
+				<li>
+					<input class="category-toggler" data-target="packaging" id="packaging" type="radio" name="filter">
+					<label for="packaging">Opakowania</label>
+				</li>
+			</ul>
+		</nav>
+		<section class="portfolio">
+			<figure class="poster" data-category="all">
+				<img src="images/poster-1.png" alt="To jest pierwsza miniatura portfolio.">
+				<figcaption>
+					<h4>Wszystkie</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been
+						the industry's standard dummy text ever since the 1500s</p>
+				</figcaption>
+			</figure>
+
+			<figure class="poster" data-category="illustrations">
+				<img src="images/poster-2.png" alt="To jest pierwsza miniatura portfolio.">
+				<figcaption>
+					<h4>Ilustracje</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been
+						the industry's standard dummy text ever since the 1500s</p>
+				</figcaption>
+			</figure>
+
+			<figure class="poster" data-category="posters">
+				<img src="images/poster-3.png" alt="To jest pierwsza miniatura portfolio.">
+				<figcaption>
+					<h4>Plakaty</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been
+						the industry's standard dummy text ever since the 1500s</p>
+				</figcaption>
+			</figure>
+
+			<figure class="poster" data-category="typography">
+				<img src="images/poster-4.png" alt="To jest pierwsza miniatura portfolio.">
+				<figcaption>
+					<h4>Typografia</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been
+						the industry's standard dummy text ever since the 1500s</p>
+				</figcaption>
+			</figure>
+
+			<figure class="poster" data-category="packaging">
+				<img src="images/poster-5.png" alt="To jest pierwsza miniatura portfolio.">
+				<figcaption>
+					<h4>Opakowania</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been
+						the industry's standard dummy text ever since the 1500s</p>
+				</figcaption>
+			</figure>
+		</section>
+	</form>
+
+	<footer class="footer container">
+		<h5>Kontakt</h5>
+		<ul class="contact">
+			<li><i class="fas fa-user"></i>Piotr Niewiadomski</li>
+			<li><i class="fas fa-phone-alt"></i>(+48) 600-700-800</li>
+			<li><i class="fas fa-envelope"></i>piotrek@niewiadomski.pl</li>
+		</ul>
+		<ul class="social">
+			<li class="social-dribbble">
+				<a href="#"><i class="fab fa-dribbble-square"></i>Dribbble</a>
+			</li>
+			<li class="social-facebook">
+				<a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+			</li>
+			<li class="social-twitter">
+				<a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+			</li>
+		</ul>
+		<hr class="divider">
+		<p class="copyright">Piotr Niewiadomski &copy; 2020</p>
+	</footer>
+
+	<script defer src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.navbar input[type='radio'] {
+	display: none;
+}
+
+.navbar li {
+	margin-bottom: 10px;
+}
+
+.navbar input[type='radio'] ~ label {
+	cursor: pointer;
+	color: #888;
+	transition: color 0.1s ease-in-out;
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+
+.navbar input[type='radio'] ~ label:hover {
+	color: #000;
+}
+
+.navbar input[type='radio']:checked ~ label {
+	color: #000;
+}
+
+.navbar input[type='radio'] ~ label::after,
+.navbar input[type='radio'] ~ label::before {
+	content: '';
+	display: block;
+	background-color: #999;
+}
+
+.navbar input[type='radio'] ~ label::before {
+	height: 0;
+	width: 3px;
+	margin-right: 15px;
+	transition: height 0.2s ease-out;
+}
+
+.navbar input[type='radio']:checked ~ label::before {
+	height: 1em;
+}
+
+.divider {
+	margin: 0.75em 0;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.shown {
+	display: flex;
+	animation: fade-in 0.5s ease-out;
+}
+
+.fading-out {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: fade-out 0.5s ease-out;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@media screen and (min-width: 710px) {
+	.navbar input[type='radio'] ~ label::after {
+		height: 2px;
+		width: 0;
+		margin-top: 3px;
+		transition: width 0.2s ease-out;
+	}
+
+	.navbar input[type='radio']:checked ~ label::after {
+		width: calc(100% + 10px);
+	}
+
+	.navbar input[type='radio'] ~ label::before {
+		display: none;
+	}
+
+	.portfolio {
+		border-top: 1px solid #aaa;
+		border-bottom: 1px solid #aaa;
+		padding-top: 15px;
+		margin-bottom: 30px;
+	}
+
+	.navbar li {
+		margin-bottom: 0;
+	}
+
+	.fading-out {
+		top: 15px;
+	}
+}
